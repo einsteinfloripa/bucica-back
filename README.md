@@ -24,8 +24,8 @@ Back do Protocolo B.U.C.I.C.A (Banco Unificado de Chamadas Interativas para Cont
 
 ---
 
-| 400             | 405             | 500          |
-| --------------- | --------------- | ------------ |
-| Dados inválidos | Método inválido | Erro Interno |
+| 400             | 404             | 405             | 500          |
+| --------------- | --------------- | ------------ | ------------ |
+| Dados inválidos | Página não encontrada | Método inválido | Erro Interno |
 
 > *{"Err": "Descrição do Erro" }*
