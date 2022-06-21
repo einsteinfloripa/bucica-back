@@ -1,0 +1,14 @@
+{
+    "name": "einsteinfloripa/bucica-back",
+    "description": "Backend do Bucica",
+    "authors": [
+        {
+            "name": "Djonys Dalmy",
+            "email": "djonys.dalmy@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

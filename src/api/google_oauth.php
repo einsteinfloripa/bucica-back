@@ -1,5 +1,11 @@
 <?php
 
+function getAccessToken() {
+
+$client_id = $_ENV['CLIENT_ID'];
+$client_secret = $_ENV['CLIENT_SECRET'];
+$refresh_token = $_ENV['REFRESH_TOKEN'];
+
 $curl = curl_init();
 
 curl_setopt_array($curl, [
@@ -23,6 +29,9 @@ curl_close($curl);
 
 if ($err) {
   echo "cURL Error #:" . $err;
+  return false;
 } else {
-  echo $response;
+  return json_decode($response)->access_token;
+}
+
 }
